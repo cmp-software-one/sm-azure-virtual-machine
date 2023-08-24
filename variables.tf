@@ -22,13 +22,11 @@ variable "resource_group" {
   type = string
   description = "Resource Group Name"
   default = "rg-victor-vm-ws"
-  }
-
+}
 variable "location" {
   type = string
   description = "Resource Group Location"
   default = "westeurope"
-
 }
 
 # Network
@@ -51,12 +49,11 @@ variable "address_prefixes" {
 variable "vm_name" {
   type = string
   description = "Virtual Machine Name"
-  default = "smazurevmws"
 }
 variable "vm_size" {
   type = map(string)
   description = "Virtual Machine Size"
-  default = {
+    default = {
     dev = "Standard_B1ms"
     prd = "Standard_A2_v2"
   }
@@ -66,7 +63,7 @@ variable "vm_admin_username" {
   description = "Virtual Machine Admin User"
   default = "adminmcc"
 }
-variable "vm_admin_password" {
+variable "sensitive_vm_admin_password" {
   type = string
   sensitive = true
   description = "Virtual Machine Admin Pwd"
@@ -92,5 +89,6 @@ variable "public_ip_sku" {
 }
 
 variable "isproduction" {
+  type = bool
   default = false
 }
