@@ -22,13 +22,11 @@ Do also refer to the section below for Azure's **Naming convention best practice
 
 | Field         | Best practice and Options      | Limitations |
 | ------------- | --------------------------------- |-|
-| **Virtual Machine Admin User** | **Your prefered standard Admin username** | Username must only contain letters, numbers, hyphens, and underscores and may not start with a hyphen or number.
-Usernames must not include reserved words.
-The value is in between 1 and 64 characters long. | NA |
+| **Virtual Machine Admin User** | **Your prefered standard Admin username** | 1-64 char's. Only letters, numbers, hyphens, and underscores|
 | **Storage Account Type** | **ZRS**, LRS, GRZ, GZRS  | Select only one of those show |
 | **Resource Group Location** | Refer to the **Azure Regions table below** | Copy from the Name column|
 | **Virtual Network Name** | Refer to the **Naming convention best practices** | NA |
-| **VM Disk Size** | Select your target Subscription ID | NA |
+| **VM Disk Size** | **30**, 32, 64, 128 | Number |
 | **Resource Group Name** | **example** rg-app or service name-subscription purpose-number | 1-90 chars, alphanumerics, underscores, parentheses, hyphens |
 
 
